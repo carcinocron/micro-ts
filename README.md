@@ -8,6 +8,7 @@ This project is for utility functions (similar to lodash) that are optimized for
 
 - Typescript-first
 - small file-size
+  - use of minification tool like [terser](https://www.npmjs.com/package/terser) is presumed.
 - treeshakable code
 - performance
 - minimal impact to the garbage collector
