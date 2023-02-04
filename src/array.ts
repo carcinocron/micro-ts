@@ -14,8 +14,9 @@ export function removeItem<T>(arr : Array<T>, value : T): void {
 
 /**
  * remove value(s) from array that the function `fn` returns true
+ * Note: the boolean in fn=>boolean means "keep: true/false"
  **/
-export function removeItemWhere<T>(arr : Array<T>, fn : (item : T)=>boolean): void {
+export function filterBy<T>(arr : Array<T>, fn : (item : T)=>boolean): void {
   let from = 0, to = 0;
   while (from < arr.length) {
     if (fn(arr[from])) {
